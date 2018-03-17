@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Exercício 6 </title>
+  </head>
+  <body>
+    <p> Escreva uma função para calcular e alertar o número de lâmpadas necessárias para iluminar um determinado cômodo de uma residência. Dados de entrada: a potência da lâmpada utilizada (em watts), as dimensões (largura e comprimento, em metros) do cômodo. Considere que a potência necessária é de 18 watts por metro quadrado. As entradas devem ser inputadas via prompt e nãp devem aceitar valores não numéricos. </p>
+    <script>
+      function quantidadeLampadas() {
+          var potenciaLamp=prompt("Digite a potência em watts da lâmpada utilizada");
+          var larguraComodo=prompt("Digite a largura em metros do cômodo");
+          var comprimentoComodo=prompt("Digite o comprimento em metros do cômodo");
+          var area= larguraComodo*comprimentoComodo;
+          var quantidade= (18*area)/potenciaLamp;
+          return("São necessárias " + quantidade + " Lâmpadas")
+        }
+        if (isNaN(quantidadeLampadas())) {
+          alert("O parâmetro não pode ser adicionado porque não se trata de um número");
+        }
+        else {
+          alert( quantidadeLampadas());
+        }
+    </script>
+  </body>
+</html>

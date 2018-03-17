@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Exercício 4 </title>
+  </head>
+  <body>
+    <p> Escreva uma função que receba um parâmetro e informe se o mesmo é ou não um número inteiro. </p>
+    <script>
+      var numero=prompt("Digite um número");
+      function numInteiro (valor) {
+        if (valor%1==0) {
+          return("O número é inteiro!");
+        }
+        else {
+          return("O número não é inteiro!");
+        }
+      }
+      document.write(numInteiro(numero));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Exercício 14 </title>
+  </head>
+  <body>
+    <p> Crie um objeto que possua uma propriedade números, do tipo array. Esse objeto deve possuir métodos:
+          que adicione um número a propriedade números;
+          que verifique se um número se o número recebido como parâmetro e alerte se ele está presente ou não na propriedade números;
+          que remova um número já existente ou alerte caso o número não esteja presente na propriedade números;
+          que retorne os números positivos existentes na propriedade números;
+          que retorne os números negativos existentes na propriedade números;
+          que retorne os números pares existentes na propriedade números;
+          que retorne os números impares existentes na propriedade números;
+          que retorne a soma dos números existentes na propriedade números;
+        Observação: Não deve ser possível adicionar valores não números na propriedade números; </p>
+  <script>
+    var Números = [1,2,3,4,5,6,7,8,9,10];
+      var adicionar = (prompt("Digite um número"));
+      if (isNaN(adicionar)) {
+        alert("O parâmetro não pode ser adicionado porque não se trata de um número");
+      }
+      else {
+       Números.push(adicionar);
+      }
+        var remover = (prompt("Digite o número a ser removido"));
+        for (i=0; i<=Números.lengh; i++) {
+          if (Números.find(i,Números)=remover) {
+            Números.splice(remover);
+          }
+          else {
+            alert("O número não está presente na propriedade");
+          }
+        }
+      console.log(Números);
+
+  </script>
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Exercício 3 </title>
+  </head>
+  <body>
+    <p> Escreva uma função que receba um número, via prompt, e alerte se o número é par ou impar. </p>
+    <script>
+      var numero=prompt("Digite um número");
+      function ParOuImpar (valor) {
+        if (valor%2==0) {
+          return("O número é par!");
+        }
+        else {
+          return("O número é ímpar!");
+        }
+      }
+      alert(ParOuImpar(parseInt(numero)));
+    </script>
+  </body>
+</html>
